@@ -1,0 +1,3 @@
+- [Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial)
+- [Learn Enough Text Editor to Be Dangerous](https://www.learnenough.com/text-editor-tutorial#sec-summary_vim)
+- [Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial)
