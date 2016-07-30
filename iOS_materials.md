@@ -19,3 +19,4 @@
 ### iOS 博客 ，性能优化
 - [ WeRead团队博客](http://wereadteam.github.io/2016/05/03/WeRead-Performance/)
 - [iOS 启动连续闪退保护方案](http://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&mid=2709544874&idx=1&sn=0fae5a4b66d1a8d8a66ed38c128e26c6&scene=2&srcid=0601tRPwRtr9564l9cKUxiWN&from=timeline&isappinstalled=0#wechat_redirect)
+- [libextobjc macros初探](http://blog.huangkunkun.com/2016/04/14/libextobjc-macros-peeking/)
