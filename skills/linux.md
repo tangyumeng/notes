@@ -1,2 +1,11 @@
 - [How To Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04)
 - [ubuntu16.04 配置博客](https://www.digitalocean.com/community/tutorials)
+
+
+
+
+awk
+
+foo.txt : this is a test.
+>  awk 'BEGIN{OFS=":"}{print $4,$3,$2,$1}' foo.txt
+test.:a:is:this

@@ -7,3 +7,6 @@
   ```
 
 - [Linux基础](http://linuxtools-rst.readthedocs.io/zh_CN/latest/base/index.html)
+
+
+- [Beej's Guide to Unix IPC](http://beej.us/guide/bgipc/output/html/multipage/index.html)
