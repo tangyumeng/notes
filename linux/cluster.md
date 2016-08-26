@@ -39,3 +39,6 @@ Software
 
 
 - [Lvs之NAT、DR、TUN三种模式的应用配置案例](http://lansgg.blog.51cto.com/5675165/1229421)
+
+
+LVS 持久连接：
