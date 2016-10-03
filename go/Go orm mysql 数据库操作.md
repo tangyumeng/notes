@@ -39,7 +39,7 @@ func init() {
 
 func main() {
 	post := Post{Content: "Hello World!", Author: "tangyumeng"}
-	fmt.Println(post) // [{1 Good post! Joe 1 2016-10-03 18:14:37 +0800 CST} {2 Good post! Joe 1 2016-10-03 18:14:37 +0800 CST}]
+	fmt.Println(post) // {0 Hello World! tangyumeng [] 0001-01-01 00:00:00 +0000 UTC}
 
 	// Create a post
 	Db.Create(&post)
@@ -55,7 +55,7 @@ func main() {
 	Db.Where("author = ?", "tangyumeng").First(&readPost)
 	var comments []Comment
 	Db.Model(&readPost).Related(&comments)
-	fmt.Println(comments) // {1 Good post! Joe 1 2015-04-13 11:38:50.920377 +0800 SGT}
+	fmt.Println(comments) // [{1 Good post! Joe 1 2016-10-03 18:14:37 +0800 CST} {2 Good post! Joe 1 2016-10-03 18:14:37 +0800 CST}]
 }
 
 
