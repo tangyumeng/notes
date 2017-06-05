@@ -133,12 +133,16 @@ func main() {
 			os.Exit(1)
 		}
 		//Choice flag
+		//注意这里如果有 -metric arg, 其值只能从 chars , words ,lines 这些值里面选择一个
+		//比如： go run test_flagset.go list -text "beijing ,haiDian tang yumeng" -metric words
+		//如果： go run test_flagset.go list -text "beijing ,haiDian tang yumeng" -metric wordsss ，则不能通过if 判断，将会打印 usage  ， 并且退出执行
 		metricChoices := map[string]bool{"chars": true, "words": true, "lines": true}
 		if _, validChoice := metricChoices[*listMetricPtr]; !validChoice {
 			listCommand.PrintDefaults()
 			os.Exit(1)
 		}
 
+		//这里是实际功能，仅做演示用，程序并没有太大实际用途
 		if *listMetricPtr == "words" {
 			removePunctuation := func(r rune) rune {
 				if strings.ContainsRune(".,:;?", r) {
@@ -147,6 +151,7 @@ func main() {
 					return r
 				}
 			}
+
 			s := strings.Map(removePunctuation, *listTextPtr)
 			words := strings.Fields(s)
 			for i, word := range words {
@@ -176,7 +181,6 @@ func main() {
 	}
 
 }
-
 ```
 
 
