@@ -1,1 +1,0 @@
-- [为什么要使用 Node.js](http://gold.xitu.io/post/57b54f151532bc0063ebfe31)
