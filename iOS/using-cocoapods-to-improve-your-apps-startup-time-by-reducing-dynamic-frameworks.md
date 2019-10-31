@@ -1,4 +1,4 @@
-### 用 Cocoapods 合并动态库，改善应用的启动时间
+### 用 Cocoapods 合并动态库，优化应用的启动时间
 
 iOS 应用启动过程，main() 方法调用前，主要过程如下：
 
@@ -67,3 +67,4 @@ end</code></pre>
 - [iOS启动速度优化总结](https://blog.csdn.net/u013602835/article/details/96429977)
 - [main () 之前的过程有哪些?](https://ioscaff.com/articles/191/what-are-the-processes-before-the-03-ios-interview-question-main)
 - [点击 Run 之后发生了什么？](https://www.jianshu.com/p/d5cf01424e92)
+- [cocoapods-pod-merge](https://github.com/grab/cocoapods-pod-merge)
